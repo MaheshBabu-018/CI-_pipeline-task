@@ -16,13 +16,13 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.maheshbabu018 }}
-          password: ${{ secrets.dckr_pat_ml3YYfrrDhir3OQLD50Fnhrp7AA }}
+          username: ${{ maheshbabu018 }}
+          password: ${{ dckr_pat_ml3YYfrrDhir3OQLD50Fnhrp7AA }}
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.maheshbabu018 }}/python-app:latest .
+          docker build -t ${{ maheshbabu018 }}/python-app:latest .
 
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.maheshbabu018 }}/python-app:latest
+          docker push ${{ maheshbabu018 }}/python-app:latest

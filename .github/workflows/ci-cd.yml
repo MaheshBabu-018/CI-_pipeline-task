@@ -27,4 +27,4 @@ jobs:
         with:
           context: ./CI-_pipeline-task
           push: true
-          tags: MaheshBabu-018/ris-devops-practice-project:latest
+          tags: maheshbabu018/ris-devops-practice-project:latest
